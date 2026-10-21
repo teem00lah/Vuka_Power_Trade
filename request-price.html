@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123654">
+  <meta name="description" content="Submit your business details and request trade pricing from Vuka Power Trade.">
+  <title>Request Pricing | Vuka Power Trade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="logo" href="index.html" aria-label="Vuka Power Trade home"><span class="logo-mark" aria-hidden="true">✳</span><span class="logo-copy"><strong>Vuka Power Trade</strong><small>Solar, storage and power</small></span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="index.html" class="nav-link">Home</a><a href="browse.html" class="nav-link">Browse</a></nav>
+      <a class="btn quote-btn" href="browse.html">Browse products <span class="cart-count" aria-hidden="true">→</span></a>
+    </div>
+    <div class="strip">Trade supply <span>•</span> Solar, storage and power equipment <span>•</span> Pricing by quote</div>
+  </header>
+  <main class="wrap request-page">
+    <section class="hero">
+      <span class="eyebrow">TRADE PRICING</span>
+      <h1>Request a price</h1>
+      <p>Share your business and delivery details. We’ll confirm pricing, availability and delivery with you.</p>
+    </section>
+    <section class="request-card" aria-labelledby="requestTitle">
+      <h2 id="requestTitle">Your details</h2>
+      <p class="request-help">Products you add from the Browse page will be included with their selected quantities.</p>
+      <form id="requestForm">
+        <label><span class="field-label">Company name <b>*</b></span><input name="company" type="text" placeholder="Company (Pty) Ltd" autocomplete="organization" required></label>
+        <label><span class="field-label">VAT number <small>(optional)</small></span><input name="vat" type="text" placeholder="e.g. 4123456789" autocomplete="off"></label>
+        <label><span class="field-label">Contact person <b>*</b></span><input name="contact" type="text" placeholder="Full name" autocomplete="name" required></label>
+        <label><span class="field-label">Email <b>*</b></span><input name="email" type="email" placeholder="you@company.co.za" autocomplete="email" required></label>
+        <label><span class="field-label">Phone <small>(optional)</small></span><input name="phone" type="tel" placeholder="082 000 0000" autocomplete="tel"></label>
+        <label><span class="field-label">Delivery area <small>(optional)</small></span><input name="deliveryArea" type="text" placeholder="City / province" autocomplete="address-level2"></label>
+        <label><span class="field-label">Notes <small>(optional)</small></span><textarea name="notes" rows="4" placeholder="Tell us about quantities, timelines or delivery requirements."></textarea></label>
+        <button class="btn" type="submit">Send price request</button>
+        <p class="muted">Submitting opens an email addressed to sales@vukapowertrade.com for you to review and send.</p>
+      </form>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><div class="footer-brand"><strong>Vuka Power Trade</strong><span>Solar, storage and power for trade.</span><a class="footer-email" href="mailto:sales@vukapowertrade.com">sales@vukapowertrade.com</a></div><div><p>Product references, stock status and pricing are confirmed with every quote request.</p><p class="footer-small">Prices are shown in ZAR and exclude VAT unless stated otherwise.</p></div></div></footer>
+  <script src="request-price.js"></script>
+</body>
+</html>

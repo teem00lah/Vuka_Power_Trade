@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request pricing | Vuka Power Trade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="logo" href="index.html">Vuka Power Trade</a>
+      <a class="btn dark" href="browse.html">Back to catalogue</a>
+    </div>
+  </header>
+  <main class="wrap request-page">
+    <section class="hero">
+      <h1>Request pricing</h1>
+      <p>Complete your company details and our team will confirm pricing and availability.</p>
+    </section>
+    <section class="request-card">
+      <h2>Products</h2>
+      <div id="requestItems" class="request-items"></div>
+      <form id="requestForm">
+        <label>Company name*<input name="company" autocomplete="organization" required></label>
+        <label>VAT number<input name="vat" inputmode="numeric"></label>
+        <label>Company email*<input name="email" type="email" autocomplete="email" required></label>
+        <label>Phone number*<input name="phone" type="tel" autocomplete="tel" required></label>
+        <label>Delivery area*<input name="deliveryArea" placeholder="Town / region" required></label>
+        <label>Notes<textarea name="notes" rows="4" placeholder="Anything else our team should know?"></textarea></label>
+        <button class="btn" type="submit">Prepare price request</button>
+      </form>
+      <p class="muted">Submitting opens an email draft addressed to our sales team.</p>
+    </section>
+  </main>
+  <script src="request-price.js"></script>
+</body>
+</html>

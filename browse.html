@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#123654">
+  <meta name="description" content="Browse Vuka Power Trade's solar, storage and power equipment catalogue and request trade pricing.">
+  <title>Browse Trade Products | Vuka Power Trade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="wrap bar">
+      <a class="logo" href="index.html" aria-label="Vuka Power Trade home"><span class="logo-mark" aria-hidden="true">✳</span><span class="logo-copy"><strong>Vuka Power Trade</strong><small>Solar, storage and power</small></span></a>
+      <nav class="main-nav" aria-label="Main navigation"><a href="index.html" class="nav-link">Home</a><a href="browse.html" class="nav-link active" aria-current="page">Browse</a></nav>
+      <button id="cartBtn" class="btn quote-btn">Price request <span class="cart-count" id="cartCount">0</span></button>
+    </div>
+    <div class="strip">Trade catalogue <span>•</span> Prices shown exclusive of VAT <span>•</span> Availability confirmed with every quote</div>
+  </header>
+  <main class="wrap">
+    <section class="hero" id="catalogue"><span class="eyebrow">VUKA POWER TRADE · PRODUCT CATALOGUE</span><h1>Equipment for the work you do.</h1><p>Find solar, storage and power products, then send us a shortlist. We’ll confirm trade pricing, stock and delivery details in your quote.</p><div class="trust-points"><span><b>01</b> Clear product references</span><span><b>02</b> Stock status at a glance</span><span><b>03</b> Itemized quote requests</span></div></section>
+    <section class="browse-filters" aria-label="Browse and filter products">
+      <div class="search-wrap"><span aria-hidden="true" class="search-icon">⌕</span><input id="search" type="search" placeholder="Search name, code or spec — e.g. 5kWh, 550W, 48V" aria-label="Search product name, code or specification"></div>
+      <div id="categoryChips" class="category-chips" aria-label="Filter by category"></div>
+      <button id="filterToggle" class="filter-toggle" type="button" aria-expanded="true" aria-controls="filterPanel"><span>☷ &nbsp; Filters</span><span id="filterChevron" aria-hidden="true"></span></button>
+      <section id="filterPanel" class="filter-panel">
+        <label class="filter-label" for="brand">Brand</label><select id="brand" aria-label="Filter by brand"><option value="all">All brands</option></select>
+        <div class="filter-label stock-label">Stock status</div>
+        <div class="stock-chips" role="group" aria-label="Filter by stock status">
+          <button type="button" class="stock-chip selected" data-stock="all">All</button><button type="button" class="stock-chip" data-stock="in"><i class="dot green"></i>In Stock</button><button type="button" class="stock-chip limited-chip" data-stock="limited"><i class="dot amber"></i>Limited Stock</button><button type="button" class="stock-chip low-chip" data-stock="low"><i class="dot red"></i>Low Stock</button>
+        </div>
+        <button id="reset" class="clear-filters" type="button">× &nbsp; Clear all filters</button>
+      </section>
+      <div class="results-line"><span id="resultCount" class="muted"></span><span class="results-note">Select products to build your quote</span></div>
+    </section>
+    <div id="grid" class="grid"></div>
+  </main>
+  <footer><div class="wrap footer-inner"><div class="footer-brand"><strong>Vuka Power Trade</strong><span>Solar, storage and power for trade.</span></div><div><p>Product references, stock status and pricing are confirmed with every quote request.</p><p class="footer-small">Prices are shown in ZAR and exclude VAT unless stated otherwise.</p></div></div></footer>
+  <dialog id="productDlg"></dialog><dialog id="cartDlg"></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
